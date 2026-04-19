@@ -16,7 +16,11 @@ const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: [
+    'http://localhost:5173',
+    'https://academic-mastery-3.vercel.app', // production Vercel domain
+    'https://academic-mastery-zeta.vercel.app', // fallback for preview deployments
+  ],
   credentials: true,
 }));
 app.use(express.json());
