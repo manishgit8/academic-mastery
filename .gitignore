@@ -1,0 +1,11 @@
+.env
+.env.bak
+server/.env
+server/.env.bak
+*.log
+.vite/
+node_modules/
+server/node_modules/
+dist/
+build/
+uploads/
